@@ -10,7 +10,7 @@ class School
     @grade = grade
     
     @roster[grade] ||= []
-    @roster[grade] << name
+    @roster[grade] << name.sort
   end
   def roster
     @roster
